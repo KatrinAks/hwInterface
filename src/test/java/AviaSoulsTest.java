@@ -108,19 +108,19 @@ public class AviaSoulsTest {
         Assertions.assertArrayEquals(expected, actual);
     }
 
-   //@Test
-    //public void shouldComparatorToEquals() {
-    //    Comparator<Ticket> comparator = new TicketTimeComparator();
+   @Test
+    public void shouldComparatorToEquals() {
+       Comparator<Ticket> comparator = new TicketTimeComparator();
 
-    //    Ticket t1 = new Ticket("МСК", "Тюмень", 50, 8, 15);
-    //    Ticket t2 = new Ticket("МСК", "Тюмень", 60, 8, 15);
+        Ticket t1 = new Ticket("МСК", "Тюмень", 50, 8, 15);
+        Ticket t2 = new Ticket("МСК", "Тюмень", 60, 8, 15);
 
-    //    int expected = 0;
-    //    int actual = comporator.compare();
+        int expected = 0;
+        int actual = ticketTimeComporator.compare("МСК", "Тюмень");
 
 
-    //    Assertions.assertEquals(expected, actual);
-    //}
+        Assertions.assertEquals(expected, actual);
+    }
 
     @Test
     public void shouldSearchAndSortByComparatorTicketM() {
